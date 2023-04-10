@@ -48,8 +48,8 @@ const applyAccessFor = function (address) {
     provider.getNetwork().then((network) => {
 
       console.log("chainId is:", network.chainId)
-      if (network.chainId !== 1074) {
-        alert("Please connect to IOTA EVM Testnet");
+      if (network.chainId !== 1071) {
+        alert("Please connect to ShimmerEVM Testnet");
         lock()
       }
     }).catch((error) => {
