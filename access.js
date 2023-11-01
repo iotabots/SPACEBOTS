@@ -7,7 +7,7 @@ const lock = function () {
   locked = true
   console.log("lock!")
   // lockingFunction()
-  alert("Sorry - You need a SPACEBOTS NFT to play the Game! More Info: https://games.iotabots.io/spacebots")
+  alert("Sorry - You need a SPACEBOTS NFT to play the Game! More Info: https://iotabots.io/projects/spacebots")
   location.reload();
 
 }
@@ -48,8 +48,8 @@ const applyAccessFor = function (address) {
     provider.getNetwork().then((network) => {
 
       console.log("chainId is:", network.chainId)
-      if (network.chainId !== 1071) {
-        alert("Please connect to ShimmerEVM Testnet");
+      if (network.chainId !== 1073) {
+        alert("Please connect to ShimmerEVM Mainnet");
         lock()
       }
     }).catch((error) => {
@@ -761,5 +761,5 @@ const SPACEBOTS_ABI = [
 ]
 
 document.onreadystatechange = function (e) {
-  applyAccessFor("0x4578D32Da12F24D6Cabc0E313bc610bcbD9a1B77");
+  applyAccessFor("0x6c2D60145cDD0396bd03298693495bf98fcdD93E");
 };
