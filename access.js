@@ -48,7 +48,7 @@ const applyAccessFor = function (address) {
     provider.getNetwork().then((network) => {
 
       console.log("chainId is:", network.chainId)
-      if (network.chainId !== 1073) {
+      if (network.chainId !== 1072) {
         alert("Please connect to ShimmerEVM Mainnet");
         lock()
       }
