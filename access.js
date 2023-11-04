@@ -48,7 +48,7 @@ const applyAccessFor = function (address) {
     provider.getNetwork().then((network) => {
 
       console.log("chainId is:", network.chainId)
-      if (network.chainId !== 1072) {
+      if (network.chainId !== 148) {
         alert("Please connect to ShimmerEVM Mainnet");
         lock()
       }
@@ -761,5 +761,5 @@ const SPACEBOTS_ABI = [
 ]
 
 document.onreadystatechange = function (e) {
-  applyAccessFor("0x6c2D60145cDD0396bd03298693495bf98fcdD93E");
+  applyAccessFor("0xA10F4eb010F85F0F21107cc4F7464cF7da73076C");
 };
